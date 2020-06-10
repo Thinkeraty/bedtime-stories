@@ -8,7 +8,6 @@ export default class WriteStory extends React.Component {
                 <Text style={{fontWeight: 'bold', fontSize: 30}}>Write A Story...</Text>
                 
                 <TextInput
-                    numberOfLines = {4}
                     style={{ height: 40, borderColor: 'gray', borderWidth: 1, width: 200, marginTop: 50 }}
                     onChangeText={text => onChangeText(text)}
                 />
