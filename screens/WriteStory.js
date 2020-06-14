@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, TextInput } from 'react-native';
+import { StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native';
 
 export default class WriteStory extends React.Component {
     render() {
@@ -8,9 +8,13 @@ export default class WriteStory extends React.Component {
                 <Text style={{fontWeight: 'bold', fontSize: 30}}>Write A Story...</Text>
                 
                 <TextInput
-                    style={{ height: 40, borderColor: 'gray', borderWidth: 1, width: 200, marginTop: 50 }}
-                    onChangeText={text => onChangeText(text)}
+                    multiline
+                    style={{ height: 100, borderColor: 'gray', borderWidth: 1, width: 300, marginTop: 50, marginBottom: 40 }}
                 />
+
+                <TouchableOpacity style={{backgroundColor: '#f00', padding: 10, margin: 10}}>
+                    <Text style={{color: 'white'}}>Create Story</Text>
+                </TouchableOpacity>
                 
             </View>
         )
