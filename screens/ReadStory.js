@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, KeyboardAvoidingView, FlatList, ToastAndroid, S
 import {Header, SearchBar} from 'react-native-elements';
 import db from '../config.js'
 
-export default class ReadStoryScreen extends React.Component {
+export default class ReadStory extends React.Component {
     constructor(){
       super();
       this.state ={
